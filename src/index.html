@@ -8,66 +8,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link href="style.css" rel="stylesheet" />
     <title>Web Pribadi Saya ✨</title>
-    <style>
-      @keyframes float {
-        0%,
-        100% {
-          transform: translateY(0px);
-        }
-        50% {
-          transform: translateY(-20px);
-        }
-      }
-      @keyframes wiggle {
-        0%,
-        100% {
-          transform: rotate(-3deg);
-        }
-        50% {
-          transform: rotate(3deg);
-        }
-      }
-      .float {
-        animation: float 3s ease-in-out infinite;
-      }
-      .wiggle {
-        animation: wiggle 1s ease-in-out infinite;
-      }
-      .gradient-text {
-        background: linear-gradient(45deg, #ec4899, #a855f7, #3b82f6);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-      .glass-effect {
-        background: rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-      }
-      html {
-        scroll-behavior: smooth;
-      }
-      .gallery-card {
-        position: relative;
-        overflow: hidden;
-        border-radius: 1.5rem;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s ease;
-      }
-
-      .gallery-card:hover {
-        transform: scale(1.05);
-      }
-
-      .gallery-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        aspect-ratio: 1 / 1;
-        display: block;
-      }
-    </style>
   </head>
   <body
     class="bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50 text-gray-800"
@@ -161,7 +103,7 @@
       </div>
     </nav>
 
-    <!-- Home Section -->
+    <!-- Home -->
     <section
       id="home"
       class="min-h-screen flex items-center justify-center pt-20 px-4"
@@ -236,7 +178,7 @@
       </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section
       id="about"
       class="py-20 bg-gradient-to-r from-purple-100 via-pink-100 to-blue-100"
@@ -257,7 +199,6 @@
               <div
                 class="relative rounded-3xl overflow-hidden shadow-2xl hover:scale-105 transition-all duration-300"
               >
-                <!-- Ganti bagian ini dengan foto -->
                 <div
                   class="aspect-square bg-gray-100 flex items-center justify-center overflow-hidden"
                 >
@@ -268,7 +209,6 @@
                   />
                 </div>
 
-                <!-- Tetap pertahankan bintang di pojok -->
                 <div
                   class="absolute -top-4 -right-4 w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-white text-xl wiggle"
                 >
@@ -325,7 +265,7 @@
       </div>
     </section>
 
-    <!-- CV Section -->
+    <!-- CV -->
     <section id="cv" class="py-20 bg-gradient-to-b from-blue-50 to-purple-50">
       <div class="max-w-5xl mx-auto px-4">
         <div class="text-center mb-16">
@@ -338,7 +278,7 @@
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Experience Card -->
+          <!-- Experience-->
           <div
             class="bg-white rounded-3xl p-8 shadow-2xl hover:scale-105 transition-all duration-300 border border-pink-100"
           >
@@ -372,7 +312,7 @@
             </div>
           </div>
 
-          <!-- Skills Card -->
+          <!-- Skills -->
           <div
             class="bg-white rounded-3xl p-8 shadow-2xl hover:scale-105 transition-all duration-300 border border-blue-100"
           >
@@ -428,7 +368,7 @@
             </div>
           </div>
 
-          <!-- Education Card -->
+          <!-- Education -->
           <div
             class="bg-white rounded-3xl p-8 shadow-2xl hover:scale-105 transition-all duration-300 border border-yellow-100 md:col-span-2 lg:col-span-1"
           >
@@ -442,13 +382,11 @@
             </div>
             <div class="space-y-4">
               <div class="border-l-4 border-yellow-400 pl-4">
-                <h4 class="font-bold text-gray-800">
-                  S1 Teknik Informatika
-                </h4>
+                <h4 class="font-bold text-gray-800">D3 Manajemen Informatika</h4>
                 <p class="text-yellow-600 font-semibold">
-                  Universitas DCI (2021-2025)
+                  Universitas DCI (2022-2025)
                 </p>
-                <p class="text-sm text-gray-600">Sarjana, IPK 3.8/4.0</p>
+                <p class="text-sm text-gray-600">Diploma, IPK 3.8/4.0</p>
               </div>
               <div class="border-l-4 border-orange-400 pl-4">
                 <h4 class="font-bold text-gray-800">Sertifikasi UI/UX</h4>
@@ -465,7 +403,7 @@
       </div>
     </section>
 
-    <!-- Gallery Section -->
+    <!-- Gallery -->
     <section
       id="gallery"
       class="py-20 bg-gradient-to-r from-yellow-50 via-pink-50 to-purple-50"
@@ -481,7 +419,7 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Gallery Item -->
+          <!-- Item 1 -->
           <div
             class="relative group rounded-3xl overflow-hidden shadow-2xl hover:scale-105 transition-transform duration-300"
           >
@@ -508,7 +446,7 @@
             </div>
           </div>
 
-          <!-- Gallery Item -->
+          <!-- Item 2 -->
           <div
             class="relative group rounded-3xl overflow-hidden shadow-2xl hover:scale-105 transition-transform duration-300"
           >
@@ -535,7 +473,7 @@
             </div>
           </div>
 
-          <!-- Gallery Item -->
+          <!-- Item 3 -->
           <div
             class="relative group rounded-3xl overflow-hidden shadow-2xl hover:scale-105 transition-transform duration-300"
           >
@@ -565,7 +503,7 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section
       id="contact"
       class="py-20 bg-gradient-to-b from-green-50 to-blue-50"
@@ -586,7 +524,7 @@
         </div>
 
         <div class="grid md:grid-cols-2 gap-12">
-          <!-- Contact Form -->
+          <!-- Contact -->
           <div
             class="bg-white rounded-3xl p-8 shadow-2xl border border-pink-100"
           >
@@ -647,7 +585,7 @@
             </form>
           </div>
 
-          <!-- Contact Info -->
+          <!-- Info -->
           <div class="space-y-8">
             <div
               class="bg-white rounded-3xl p-8 shadow-2xl border border-blue-100 hover:scale-105 transition-all duration-300"
@@ -824,7 +762,6 @@
     </footer>
 
     <script>
-      // Mobile menu toggle
       const mobileMenuBtn = document.getElementById("mobile-menu-btn");
       const mobileMenu = document.getElementById("mobile-menu");
 
@@ -832,7 +769,6 @@
         mobileMenu.classList.toggle("hidden");
       });
 
-      // Close mobile menu when clicking on a link
       const mobileMenuLinks = mobileMenu.querySelectorAll("a");
       mobileMenuLinks.forEach((link) => {
         link.addEventListener("click", () => {
@@ -840,7 +776,6 @@
         });
       });
 
-      // Scroll to top function
       function scrollToTop() {
         window.scrollTo({
           top: 0,
@@ -848,24 +783,19 @@
         });
       }
 
-      // Form submission handler
       function handleSubmit(event) {
         event.preventDefault();
 
-        // Get form elements
         const form = event.target;
         const formData = new FormData(form);
 
-        // Show success message (you can replace this with actual form submission logic)
         alert(
           "Terima kasih! Pesan Anda telah terkirim. Saya akan menghubungi Anda segera! 💌"
         );
 
-        // Reset form
         form.reset();
       }
 
-      // Smooth scrolling for navigation links
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
@@ -879,7 +809,6 @@
         });
       });
 
-      // Add scroll effect to navigation
       window.addEventListener("scroll", () => {
         const nav = document.querySelector("nav");
         if (window.scrollY > 100) {
@@ -889,7 +818,6 @@
         }
       });
 
-      // Add entrance animations on scroll
       const observerOptions = {
         threshold: 0.1,
         rootMargin: "0px 0px -50px 0px",
@@ -904,7 +832,6 @@
         });
       }, observerOptions);
 
-      // Observe all sections for animation
       document.querySelectorAll("section").forEach((section) => {
         section.style.opacity = "0";
         section.style.transform = "translateY(30px)";
@@ -912,7 +839,6 @@
         observer.observe(section);
       });
 
-      // Add typing effect to the main heading
       function typeWriter(element, text, speed = 100) {
         let i = 0;
         element.innerHTML = "";
@@ -927,7 +853,6 @@
         typing();
       }
 
-      // Initialize typing effect when page loads
       window.addEventListener("load", () => {
         const mainHeading = document.querySelector("#home h1");
         if (mainHeading) {
