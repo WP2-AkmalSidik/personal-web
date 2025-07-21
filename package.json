@@ -1,16 +1,6 @@
 {
-  "name": "MyWebsite",
-  "version": "1.0.0",
-  "main": "src/index.html",
-  "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./public/css/style.css --minify",
-    "watch": "npx tailwindcss -i ./src/input.css -o ./public/css/style.css --watch"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
     "tailwindcss": "^4.1.11"
   }
 }
